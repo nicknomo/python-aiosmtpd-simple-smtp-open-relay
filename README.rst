@@ -1,0 +1,1 @@
+This project will make a simple SMTP relay using aiosmtpd and smtplib.  Configure the HELO name, binding ip address and tcp port, then simply run stmprelay.py.  

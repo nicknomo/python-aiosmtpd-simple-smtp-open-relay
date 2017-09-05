@@ -1,0 +1,7 @@
+0.1
+---
+
+*Release date: 05-SEP-2017*
+
+* Created a very simple SMTP open relay using AIOsmtpd
+
