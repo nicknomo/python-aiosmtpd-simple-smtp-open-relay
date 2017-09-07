@@ -30,7 +30,6 @@ class mailsender(threading.Thread):
 		
 
 	def generateNDR(self,recipient,e):
-		print(e)
 		try:
 			iplist = self.getmxrecords(recipient)
 			if not iplist: raise Exception('Could Not send email. There were no IPs returned from DNS lookup, domain is likely malformed')
