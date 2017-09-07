@@ -40,7 +40,6 @@ class mailsender(threading.Thread):
 					client = Client(ip, '25',HELOname,8)
 					#unfortunately, sending the additional options did not work well in SMTPlib.
 					#r = client.sendmail(self.email_from, [recipient], self.data, self.envelope.mail_options, self.envelope.rcpt_options)
-					print("From: " + self.email_from + " TO: " + recipient)
 					message = str(e)
 					r = client.sendmail(recipient, [recipient], message)
 					break
@@ -141,7 +140,6 @@ class mailsender(threading.Thread):
 					client = Client(ip, '25',HELOname,8)
 					#unfortunately, sending the additional options did not work well in SMTPlib.
 					#r = client.sendmail(self.email_from, [recipient], self.data, self.envelope.mail_options, self.envelope.rcpt_options)
-					print("From: " + self.email_from + " TO: " + recipient)
 					r = client.sendmail(self.email_from, [recipient], self.data)
 					break
 			
